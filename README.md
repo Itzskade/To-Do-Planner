@@ -41,3 +41,14 @@ This project includes a streamlined automation workflow. You can manage everythi
 2. Open your terminal in the project root directory.
 3. Run `make install` to prepare the environment.
 4. Run `make run` to start planning your day!
+
+--- 
+
+## 📝 Technical Notes
+
+- **Environment compatibility:** Designed for Unix-like environments (Linux, macOS, or WSL on Windows) due to native commands used in the `Makefile` (`rm`, `echo -e`, etc.).
+- **Dependency management:** If you need new libraries in the project, remember to add them to `requirements.txt` and run `make install` to integrate them cleanly into the isolated environment.
+- **Build cycle:** When using `make build`, the system will automatically verify and install `PyInstaller` if you don't have it in your `venv` yet, to generate the portable package.
+- **Data directory:** The `data/` folder is dynamically generated to store the state of your to-dos; be careful when using `make remove` as it will purge this record.
+
+---
