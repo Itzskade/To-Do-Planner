@@ -18,6 +18,7 @@ venv:
 install: venv
 	@echo -e "$(INFO) Installing dependencies..."
 	@$(PIP) install -r requirements.txt
+	@$(PIP) install pyinstaller
 	@echo -e "$(SUCCESS) dependencies installed"
 
 run: install
