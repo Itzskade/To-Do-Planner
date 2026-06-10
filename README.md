@@ -1,3 +1,10 @@
+<p align="right">
+  <a href="es.README.md">
+    <img src="https://img.shields.io/badge/🌐%20Spanish-README-%2312bab9?style=for-the-badge" alt="README Spanish" />
+  </a>
+</p>
+
+
 # To-Do Planner 📝
 
 **To-Do Planner** is a lightweight and efficient productivity application designed to help you organize your daily tasks and to-dos. Developed in Python, it allows you to easily manage your time, track your progress, and keep your daily life perfectly organized in a simple and intuitive way.
