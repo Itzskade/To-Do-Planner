@@ -183,7 +183,7 @@ class MinimalistPlanner:
             relief="solid", 
             bd=1
         )
-        self.priorities_frame.grid(row=0, column=0, pady=(0, 10), sticky="ew")
+        self.priorities_frame.grid(row=0, column=0, pady=(0, 20), sticky="ew")
         
         self.priority_canvas = tk.Canvas(self.priorities_frame, bg=self.BG_COLOR, bd=0, highlightthickness=0, height=80)
         self.priority_canvas.pack(fill="x", expand=False, padx=20, pady=4)
