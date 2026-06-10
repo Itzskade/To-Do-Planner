@@ -40,3 +40,14 @@ Este proyecto incluye un flujo de trabajo automatizado simplificado. Puedes gest
 2. Abre tu terminal en el directorio raíz del proyecto.
 3. Ejecuta `make install` para preparar el entorno.
 4. Ejecuta `make run` ¡para empezar a planificar tu día!
+
+---
+
+## 📝 Notas Técnicas
+
+- **Compatibilidad del entorno:** Diseñado para entornos tipo Unix (Linux, macOS o WSL en Windows) debido a los comandos nativos utilizados en el `Makefile` (`rm`, `echo -e`, etc.).
+- **Gestión de dependencias:** Si requieres nuevas librerías en el proyecto, recuerda agregarlas a `requirements.txt` y ejecutar `make install` para integrarlas limpiamente en el entorno aislado.
+- **Ciclo de compilación:** Al usar `make build`, el sistema verificará e instalará automáticamente `PyInstaller` si aún no lo tienes en tu `venv` para generar el empaquetado portátil.
+- **Directorio de datos:** La carpeta `data/` se genera de manera dinámica almacenando el estado de tus pendientes; ten cuidado al usar `make remove` ya que purgará dicho registro.
+
+---
